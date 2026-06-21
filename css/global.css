@@ -299,12 +299,12 @@ a:hover {
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.9rem;
   list-style: none;
 }
 
 .navbar__links a {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: 500;
   color: var(--color-steel-gray);
   transition: color var(--transition-fast);
