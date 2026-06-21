@@ -638,6 +638,12 @@ a:hover {
   line-height: 1.7;
 }
 
+/* --- Breadcrumb --- */
+.breadcrumb { padding: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-steel-gray); }
+.breadcrumb a { color: var(--color-steel-gray); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-forge-orange); }
+.breadcrumb span { color: var(--color-steel-dark); font-weight: 500; }
+
 /* --- Footer --- */
 .footer {
   background-color: var(--color-steel-dark);
