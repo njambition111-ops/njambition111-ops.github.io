@@ -26,12 +26,14 @@
     <!-- FORM -->
     <div>
       <h2 class="section__title">Send Inquiry</h2>
+      <div id="form-ok" style="display:none;background:#16a34a;color:white;padding:var(--space-lg);border-radius:var(--radius-md);margin-bottom:var(--space-xl);font-weight:600;">&#10003; Inquiry sent successfully! Please check your email (njambition111@gmail.com) — we'll reply within 24 hours.</div>
       <p style="color:var(--color-steel-gray);margin-bottom:var(--space-xl)">Fill in the form below. We'll reply by email within 24 hours.</p>
 
       <form class="contact-form" action="https://formsubmit.co/njambition111@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="PanelKnife Website Inquiry">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://njambition111-ops.github.io/contact.html?sent=ok">
         <div class="form-group"><label class="form-label" for="name">Full Name *</label><input type="text" id="name" name="Name" class="form-input" required placeholder="Your full name"></div>
         <div class="form-group"><label class="form-label" for="company">Company</label><input type="text" id="company" name="Company" class="form-input" placeholder="Your company name"></div>
         <div class="form-group"><label class="form-label" for="email">Email Address *</label><input type="email" id="email" name="Email" class="form-input" required placeholder="your@email.com"></div>
@@ -82,5 +84,6 @@
   <div class="footer__bottom"><span>&copy; <span class="footer__year">2026</span> Nanjing Ambixin Machine Tool Co., LTD.</span></div>
 </div></footer>
 <script src="js/main.js"></script>
+<script>if(location.search.indexOf('sent=ok')>-1){var e=document.getElementById('form-ok');if(e){e.style.display='block';e.scrollIntoView({behavior:'smooth'});}}</script>
 </body>
 </html>
