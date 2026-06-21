@@ -299,7 +299,7 @@ a:hover {
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 0.7rem;
   list-style: none;
 }
 
