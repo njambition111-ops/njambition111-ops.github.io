@@ -25,10 +25,8 @@
       <h2 class="section__title">Send Us a Message</h2>
       <div id="form-success" style="display:none;background:var(--color-success);color:white;padding:var(--space-lg);border-radius:var(--radius-md);margin-bottom:var(--space-xl);font-weight:600;">&#10003; Your inquiry has been sent! We will respond within 24 hours.</div>
       <p style="color:var(--color-steel-gray);margin-bottom:var(--space-2xl)">Whether you need standard chipper knives, flaker blades, or a custom solution, our team is ready to help.</p>
-      <form class="contact-form" action="https://formsubmit.co/njambition111@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="PanelKnife Website — New Inquiry">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://njambition111-ops.github.io/contact.html?sent=1">
+      <form class="contact-form" id="inquiry-form" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="_email" value="njambition111@gmail.com">
         <div class="form-group"><label class="form-label" for="name">Full Name *</label><input type="text" id="name" name="name" class="form-input" required placeholder="Your full name"></div>
         <div class="form-group"><label class="form-label" for="company">Company</label><input type="text" id="company" name="company" class="form-input" placeholder="Your company name"></div>
         <div class="form-group"><label class="form-label" for="email">Email Address *</label><input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com"></div>
@@ -60,7 +58,26 @@
 </div></footer>
 <script src="js/main.js"></script>
 <script>
-(function(){if(window.location.search.indexOf('sent=1')>-1){var b=document.getElementById('form-success');if(b){b.style.display='block';b.scrollIntoView({behavior:'smooth'});}}})();
+function handleSubmit(e) {
+  e.preventDefault();
+  var f = document.getElementById('inquiry-form');
+  var name = encodeURIComponent(f.querySelector('#name').value);
+  var company = encodeURIComponent(f.querySelector('#company').value);
+  var email = encodeURIComponent(f.querySelector('#email').value);
+  var product = encodeURIComponent(f.querySelector('#product').value);
+  var message = encodeURIComponent(f.querySelector('#message').value);
+  var subject = encodeURIComponent('PanelKnife Inquiry' + (product ? ' - ' + f.querySelector('#product option:checked').text : ''));
+  var body = encodeURIComponent(
+    'Name: ' + f.querySelector('#name').value + '\n' +
+    'Company: ' + f.querySelector('#company').value + '\n' +
+    'Email: ' + f.querySelector('#email').value + '\n' +
+    'Product: ' + (f.querySelector('#product option:checked') ? f.querySelector('#product option:checked').text : 'N/A') + '\n' +
+    'Message:\n' + f.querySelector('#message').value
+  );
+  window.location.href = 'mailto:njambition111@gmail.com?subject=' + subject + '&body=' + body;
+  var b = document.getElementById('form-success');
+  if (b) { b.style.display = 'block'; b.scrollIntoView({behavior:'smooth'}); }
+}
 </script>
 </body>
 </html>
