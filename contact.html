@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact PanelKnife for chipper knife and flaker blade inquiries. Request a quote, ask about custom blades. Response within 24 hours.">
+  <meta name="description" content="Contact Nanjing Ambixin Machine Tool — PanelKnife brand. Chipper knives, flaker blades inquiries. Email njambition111@gmail.com, WhatsApp +86-18795922133. Response within 24 hours.">
   <link rel="canonical" href="https://njambition111-ops.github.io/contact.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <title>Contact Us — Request a Quote | PanelKnife</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Contact Us — Nanjing Ambixin Machine Tool | PanelKnife</title>
   <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -15,69 +14,73 @@
   <button class="navbar__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   <ul class="navbar__links"><li><a href="index.html">Home</a></li><li><a href="products/chipper-knives.html">Chipper Knives</a></li><li><a href="products/flaker-blades.html">Flaker Blades</a></li><li><a href="products/custom-blades.html">Custom Blades</a></li><li><a href="about.html">About</a></li><li><a href="blog/">Blog</a></li><li><a href="contact.html" style="color:var(--color-forge-orange)">Contact</a></li></ul>
 </div></nav>
+
 <section class="page-header"><div class="container">
   <h1 class="page-header__title">Get in Touch</h1>
-  <p class="page-header__desc">Tell us about your blade requirements. We'll get back to you within 24 hours with a detailed quote.</p>
+  <p class="page-header__desc">Contact us for chipper knife and flaker blade inquiries. We respond within 24 hours.</p>
 </div></section>
+
 <section class="section"><div class="container">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3xl);align-items:start">
+
+    <!-- FORM -->
     <div>
-      <h2 class="section__title">Send Us a Message</h2>
-      <div id="form-success" style="display:none;background:var(--color-success);color:white;padding:var(--space-lg);border-radius:var(--radius-md);margin-bottom:var(--space-xl);font-weight:600;">&#10003; Your inquiry has been sent! We will respond within 24 hours.</div>
-      <p style="color:var(--color-steel-gray);margin-bottom:var(--space-2xl)">Whether you need standard chipper knives, flaker blades, or a custom solution, our team is ready to help.</p>
-      <form class="contact-form" id="inquiry-form" onsubmit="handleSubmit(event)">
-        <input type="hidden" name="_email" value="njambition111@gmail.com">
-        <div class="form-group"><label class="form-label" for="name">Full Name *</label><input type="text" id="name" name="name" class="form-input" required placeholder="Your full name"></div>
-        <div class="form-group"><label class="form-label" for="company">Company</label><input type="text" id="company" name="company" class="form-input" placeholder="Your company name"></div>
-        <div class="form-group"><label class="form-label" for="email">Email Address *</label><input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com"></div>
-        <div class="form-group"><label class="form-label" for="product">Product Interest</label><select id="product" name="product" class="form-input" style="appearance:auto"><option value="">Select a product</option><option value="chipper-knives">Chipper Knives</option><option value="flaker-blades">Flaker Blades</option><option value="custom-blades">Custom Blades</option><option value="other">Other / Multiple</option></select></div>
-        <div class="form-group"><label class="form-label" for="message">Message *</label><textarea id="message" name="message" class="form-textarea" required placeholder="Please describe your blade requirements, including dimensions, material preferences, and quantity."></textarea></div>
+      <h2 class="section__title">Send Inquiry</h2>
+      <p style="color:var(--color-steel-gray);margin-bottom:var(--space-xl)">Fill in the form below. We'll reply by email within 24 hours.</p>
+
+      <form class="contact-form" action="https://formsubmit.co/njambition111@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="PanelKnife Website Inquiry">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-group"><label class="form-label" for="name">Full Name *</label><input type="text" id="name" name="Name" class="form-input" required placeholder="Your full name"></div>
+        <div class="form-group"><label class="form-label" for="company">Company</label><input type="text" id="company" name="Company" class="form-input" placeholder="Your company name"></div>
+        <div class="form-group"><label class="form-label" for="email">Email Address *</label><input type="email" id="email" name="Email" class="form-input" required placeholder="your@email.com"></div>
+        <div class="form-group"><label class="form-label" for="phone">Phone / WhatsApp</label><input type="text" id="phone" name="Phone" class="form-input" placeholder="+1 234 567 890"></div>
+        <div class="form-group"><label class="form-label" for="product">Product Interest</label><select id="product" name="Product" class="form-input" style="appearance:auto"><option value="">Select a product</option><option value="Chipper Knives">Chipper Knives</option><option value="Flaker Blades">Flaker Blades</option><option value="Custom Blades">Custom Blades</option><option value="Other">Other / Multiple</option></select></div>
+        <div class="form-group"><label class="form-label" for="message">Message *</label><textarea id="message" name="Message" class="form-textarea" required placeholder="Please describe your blade requirements — dimensions, material, quantity, machine brand..."></textarea></div>
         <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Inquiry</button>
       </form>
     </div>
+
+    <!-- CONTACT INFO -->
     <div>
       <h2 class="section__title">Contact Information</h2>
-      <div style="margin-bottom:var(--space-2xl)"><p style="font-weight:600;margin-bottom:var(--space-xs)">Email</p><p style="color:var(--color-steel-gray)">njambition111@gmail.com</p></div>
-      <div style="margin-bottom:var(--space-2xl)"><p style="font-weight:600;margin-bottom:var(--space-xs)">Phone / WhatsApp</p><p style="color:var(--color-steel-gray)">+86-18795922133</p></div>
-      <div style="margin-bottom:var(--space-2xl)"><p style="font-weight:600;margin-bottom:var(--space-xs)">Address</p><p style="color:var(--color-steel-gray)">Lishui County, Nanjing, Jiangsu Province, China</p></div>
-      <div style="margin-bottom:var(--space-2xl)"><p style="font-weight:600;margin-bottom:var(--space-xs)">Office Hours</p><p style="color:var(--color-steel-gray)">Monday – Friday, 8:00 AM – 6:00 PM (GMT+8)</p></div>
-      <div style="margin-bottom:var(--space-2xl)"><p style="font-weight:600;margin-bottom:var(--space-xs)">Response Time</p><p style="color:var(--color-steel-gray)">Within 24 hours for standard inquiries<br>Within 48 hours for custom quotes</p></div>
-      <div class="blade-line blade-line--center" style="margin:var(--space-2xl) 0;max-width:100%"></div>
-      <div class="product-card" style="margin-top:var(--space-xl)"><h3 class="product-card__title">Prefer to send specifications directly?</h3><p class="product-card__desc">Email us your CAD files, drawings, or photos of sample blades at <strong>njambition111@gmail.com</strong>. We'll analyze and respond with a tailored quote.</p></div>
+
+      <div style="background:var(--color-warm-white);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);border:1px solid var(--color-border);">
+        <p style="font-weight:700;font-size:var(--text-lg);margin-bottom:var(--space-xs);color:var(--color-forge-orange)">&#9993; Email</p>
+        <a href="mailto:njambition111@gmail.com" style="font-size:var(--text-lg);font-weight:600;">njambition111@gmail.com</a>
+        <p style="color:var(--color-steel-gray);font-size:var(--text-sm);margin-top:var(--space-xs);">Direct email — fastest way to reach us</p>
+      </div>
+
+      <div style="background:var(--color-warm-white);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);border:1px solid var(--color-border);">
+        <p style="font-weight:700;font-size:var(--text-lg);margin-bottom:var(--space-xs);color:var(--color-forge-orange)">&#9742; Phone / WhatsApp</p>
+        <a href="https://wa.me/8618795922133" style="font-size:var(--text-lg);font-weight:600;">+86-18795922133</a>
+        <p style="color:var(--color-steel-gray);font-size:var(--text-sm);margin-top:var(--space-xs);">Click to chat on WhatsApp</p>
+      </div>
+
+      <div style="background:var(--color-warm-white);border-radius:var(--radius-lg);padding:var(--space-xl);margin-bottom:var(--space-lg);border:1px solid var(--color-border);">
+        <p style="font-weight:700;font-size:var(--text-lg);margin-bottom:var(--space-xs);color:var(--color-forge-orange)">&#127968; Address</p>
+        <p style="font-size:var(--text-base);color:var(--color-steel-dark);">Lishui County, Nanjing<br>Jiangsu Province, China</p>
+      </div>
+
+      <div style="background:var(--color-warm-white);border-radius:var(--radius-lg);padding:var(--space-xl);border:1px solid var(--color-border);">
+        <p style="font-weight:700;font-size:var(--text-lg);margin-bottom:var(--space-xs);color:var(--color-forge-orange)">&#128340; Hours</p>
+        <p style="font-size:var(--text-base);color:var(--color-steel-dark);">Mon – Fri, 8:00 AM – 6:00 PM (GMT+8)</p>
+        <p style="color:var(--color-steel-gray);font-size:var(--text-sm);margin-top:var(--space-xs);">Response within 24 hours</p>
+      </div>
     </div>
   </div>
 </div></section>
+
 <footer class="footer"><div class="container">
   <div class="footer__grid">
-    <div><div class="footer__brand-name">PanelKnife</div><p class="footer__brand-desc">Professional chipper knives and flaker blades manufacturer for the global wood-based panel industry.</p></div>
+    <div><div class="footer__brand-name">PanelKnife</div><p class="footer__brand-desc">A brand of Nanjing Ambixin Machine Tool Co., LTD. Professional chipper knives and flaker blades manufacturer.</p></div>
     <div><div class="footer__heading">Products</div><ul class="footer__links"><li><a href="products/chipper-knives.html">Chipper Knives</a></li><li><a href="products/flaker-blades.html">Flaker Blades</a></li><li><a href="products/custom-blades.html">Custom Blades</a></li></ul></div>
     <div><div class="footer__heading">Company</div><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="blog/">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div><div class="footer__heading">Language</div><ul class="footer__links"><li><a href="index.html">English</a></li><li><a href="zh/">中文</a></li><li><a href="vi/">Tiếng Việt</a></li><li><a href="id/">Bahasa Indonesia</a></li></ul></div>
+    <div><div class="footer__heading">Contact</div><ul class="footer__links"><li><a href="mailto:njambition111@gmail.com">njambition111@gmail.com</a></li><li>+86-18795922133</li><li>Nanjing, Jiangsu, China</li></ul></div>
   </div>
-  <div class="footer__bottom"><span>© <span class="footer__year">2026</span> Nanjing Ambixin Machine Tool Co., LTD.</span></div>
+  <div class="footer__bottom"><span>&copy; <span class="footer__year">2026</span> Nanjing Ambixin Machine Tool Co., LTD.</span></div>
 </div></footer>
 <script src="js/main.js"></script>
-<script>
-function handleSubmit(e) {
-  e.preventDefault();
-  var f = document.getElementById('inquiry-form');
-  var name = encodeURIComponent(f.querySelector('#name').value);
-  var company = encodeURIComponent(f.querySelector('#company').value);
-  var email = encodeURIComponent(f.querySelector('#email').value);
-  var product = encodeURIComponent(f.querySelector('#product').value);
-  var message = encodeURIComponent(f.querySelector('#message').value);
-  var subject = encodeURIComponent('PanelKnife Inquiry' + (product ? ' - ' + f.querySelector('#product option:checked').text : ''));
-  var body = encodeURIComponent(
-    'Name: ' + f.querySelector('#name').value + '\n' +
-    'Company: ' + f.querySelector('#company').value + '\n' +
-    'Email: ' + f.querySelector('#email').value + '\n' +
-    'Product: ' + (f.querySelector('#product option:checked') ? f.querySelector('#product option:checked').text : 'N/A') + '\n' +
-    'Message:\n' + f.querySelector('#message').value
-  );
-  window.location.href = 'mailto:njambition111@gmail.com?subject=' + subject + '&body=' + body;
-  var b = document.getElementById('form-success');
-  if (b) { b.style.display = 'block'; b.scrollIntoView({behavior:'smooth'}); }
-}
-</script>
 </body>
 </html>
